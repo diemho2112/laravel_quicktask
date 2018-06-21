@@ -8,11 +8,11 @@
         <div class="contain">
             {!! Form::open(['url' => 'task', 'id' => 'form_add']) !!}
             <div class="form-group">
-                {!! Form::label('newtask', trans('message.task')) !!}
-                {!! Form::text('newtask', null, ['class' => 'form-control']) !!}
+                {!! Form::label('name', trans('message.task')) !!}
+                {!! Form::text('name', null, ['class' => 'form-control']) !!}
                 @include('common.error')
             </div>
-            {!! Form::submit(trans('message.addtask'), ['class' => 'btn btn-primary']) !!}
+            {{ Form::button('<i class="fas fa-plus"></i>  '.trans('message.addtask'), ['type' => 'submit', 'class' => 'btn btn-primary'] )  }}
             {!! Form::close() !!}
         </div>
     </div>
@@ -34,7 +34,7 @@
                         <td>{{ $task->name }}</td>
                         <td>
                             {!! Form::open(['url' => 'task/'.$task->id, 'method' => 'delete', 'id' => 'form_del']) !!}
-                                {!! Form::submit(trans('message.delete'), ['class' => 'btn_delete']) !!}
+                            {{ Form::button('<i class="fas fa-trash-alt"></i>  '.trans('message.delete'), ['type' => 'submit', 'class' => 'btn_delete'] )  }}
                             {!! Form::close() !!}
                         </td>
                     </tr>

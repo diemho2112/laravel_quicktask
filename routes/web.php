@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+    Route::get('change-language/{language}', 'TaskController@changeLanguage')->name('user.change-language');
+    Route::get('/','TaskController@index')->name('home');
+    Route::resource('task','TaskController');
+

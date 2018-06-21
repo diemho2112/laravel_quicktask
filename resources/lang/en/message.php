@@ -11,5 +11,7 @@ return [
     'addtask' => 'Add Task',
     'currenttask' => 'Current Tasks',
     'delete' => 'Delete',
-    'wrong' => 'Something went wrong'
+    'wrong' => 'Something went wrong',
+    'english' => 'English',
+    'vietnamese' => 'Vietnamese',
 ];

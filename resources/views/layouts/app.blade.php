@@ -27,6 +27,10 @@
                     </ul>
                 </li>
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{!! route('user.change-language', ['en']) !!}">{{ trans('message.english') }}</a></li>
+                <li><a href="{!! route('user.change-language', ['vi']) !!}">{{ trans('message.vietnamese') }}</a></li>
+            </ul>
         </div>
     </div>
 </nav>
