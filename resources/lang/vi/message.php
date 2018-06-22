@@ -1,7 +1,7 @@
 <?php
 return [
-    'title' => 'Bài tập Laravel bắt đầu cơ bản',
-    'head' => 'Danh Sách Nhiệm Vụ',
+    'title' => 'Bài tập Laravel cơ bản',
+    'head' => 'Task List',
     'home' => 'Trang Chủ',
     'contact' => 'Liên Hệ',
     'about' => 'Tìm Hiểu',
@@ -12,4 +12,6 @@ return [
     'currenttask' => 'Nhiệm Vụ Hiện Tại',
     'delete' => 'Xóa',
     'wrong' => 'Đã xảy ra sự cố',
+    'english' => 'English',
+    'vietnamese' => 'Vietnamese',
 ];
